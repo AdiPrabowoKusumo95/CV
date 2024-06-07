@@ -31,7 +31,7 @@
                             <tr>
                                 <td>{{ $no++ }}</td>
                                 <td>{{ $data->nama }}</td>
-                                <td>{{ $data->tgl_lahir }}</td>
+                                <td>{{ date("d F Y", strtotime($data->tgl_lahir))}}</td>
                                 <td>{{ $data->telpon }}</td>
                                 <td>{{ $data->alamat }}</td>
                                 <td>{{ $data->usia }}</td>
@@ -41,7 +41,6 @@
                                 <td>{{ $data->facebook_link }}</td>
                                 <td>{{ $data->instagram_link }}</td>
                                 <td>{{ $data->linkedin_link }}</td>
-                                <td>{{ $data->description }}</td>
                                 <td>
                                     <a href="{{ route('admin.profile.edit', $data->id) }}"
                                         class="btn btn-success btn-sm">Edit</a> |

@@ -34,7 +34,7 @@ class ProfileController extends Controller
     {
         // return $request;
         Profile::create([
-            'nama' => $request->name,
+            'nama' => $request->nama,
             'tgl_lahir' => $request->tgl_lahir,
             'telpon' => $request->telpon,
             'alamat' => $request->alamat,
@@ -43,7 +43,7 @@ class ProfileController extends Controller
             'email' => $request->email,
             'twitter_link' => $request->twitter_link,
             'facebook_link' => $request->facebook_link,
-            'instagram_link' => $request->github_link,
+            'instagram_link' => $request->instagram_link,
             'linkedin_link' => $request->linkedin_link,
         ]);
 
@@ -74,14 +74,16 @@ class ProfileController extends Controller
     public function update(Request $request, string $id)
     {
         Profile::where('id', $id)->update([
-            'name' => $request->name,
+            'nama' => $request->nama,
+            'tgl_lahir' => $request->tgl_lahir,
+            'telpon' => $request->telpon,
+            'alamat' => $request->alamat,
+            'usia' => $request->usia,
+            'deskripsi' => $request->deskripsi,
             'email' => $request->email,
-            'phone' => $request->phone,
-            'address' => $request->address,
-            'description' => $request->description,
-            'github_link' => $request->github_link,
-            'facebook_link' => $request->facebook_link,
             'twitter_link' => $request->twitter_link,
+            'facebook_link' => $request->facebook_link,
+            'instagram_link' => $request->instagram_link,
             'linkedin_link' => $request->linkedin_link,
         ]);
 

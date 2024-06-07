@@ -10,9 +10,9 @@
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <th>No</th>
-                            <th>Nama Pekerjaan</th>
-                            <th>Perusahaan</th>
+                            <th>No.</th>
+                            <th>Jabatan</th>
+                            <th>Nama PT</th>
                             <th>Deskripsi</th>
                             <th>Tgl Mulai</th>
                             <th>Tgl Akhir</th>
@@ -24,11 +24,11 @@
                         @foreach ($datas as $data)
                             <tr>
                                 <td>{{ $no++ }}</td>
-                                <td>{{ $data->nama_pekerjaan }}</td>
-                                <td>{{ $data->perusahaan }}</td>
+                                <td>{{ $data->jabatan }}</td>
+                                <td>{{ $data->nama_pt }}</td>
                                 <td>{{ $data->deskripsi }}</td>
-                                <td>{{ $data->tgl_mulai }}</td>
-                                <td>{{ $data->tgl_akhir }}</td>
+                                <td>{{ date("d F Y", strtotime($data->tgl_mulai))}}</td>
+                                <td>{{ date("d F Y", strtotime($data->tgl_akhir))}}</td>
                                 <td>
                                     <a href="{{ route('admin.experience.edit', $data->id) }}"
                                         class="btn btn-success btn-sm">Edit</a> |

@@ -14,10 +14,11 @@ return new class extends Migration
         Schema::create('educations', function (Blueprint $table) {
             $table->id();
             $table->string('lulusan');
-            $table->string('sekolah');
-            $table->string('deskripsi');
+            $table->string('nama_sekolah');
+            $table->string('jurusan');
             $table->string('tahun_awal');
             $table->string('tahun_akhir');
+            $table->string('gpa');
             $table->timestamps();
         });
     }

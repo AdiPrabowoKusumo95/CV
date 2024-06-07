@@ -34,10 +34,12 @@ class EducationController extends Controller
     {
         // return $request;
         Education::create([
-            'nama_univ' => $request->nama_univ,
             'lulusan' => $request->lulusan,
+            'nama_sekolah' => $request->nama_sekolah,
             'jurusan' => $request->jurusan,
-            'tgl_lulus' => $request->tgl_lulus,
+            'deskripsi' => $request->deskripsi,
+            'tahun_awal' => $request->tahun_awal,
+            'tahun_akhir' => $request->tahun_akhir,
             'gpa' => $request->gpa,
         ]);
 
@@ -68,10 +70,12 @@ class EducationController extends Controller
     public function update(Request $request, string $id)
     {
         Education::where('id', $id)->update([
-            'nama_univ' => $request->nama_univ,
             'lulusan' => $request->lulusan,
+            'nama_sekolah' => $request->nama_sekolah,
             'jurusan' => $request->jurusan,
-            'tgl_lulus' => $request->tgl_lulus,
+            'deskripsi' => $request->deskripsi,
+            'tahun_awal' => $request->tahun_awal,
+            'tahun_akhir' => $request->tahun_akhir,
             'gpa' => $request->gpa,
         ]);
 

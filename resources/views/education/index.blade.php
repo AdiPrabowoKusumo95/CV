@@ -10,11 +10,13 @@
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <th>No</th>
-                            <th>Nama Universitas</th>
+                            <th>No.</th>
                             <th>Lulusan</th>
+                            <th>Nama Sekolah</th>
                             <th>Jurusan</th>
-                            <th>Tgl Lulus</th>
+                            <th>Deskripsi</th>
+                            <th>Tahun Awal</th>
+                            <th>Tahun Akhir</th>
                             <th>GPA</th>
                             <th>Aksi</th>
                         </tr>
@@ -24,11 +26,13 @@
                         @foreach ($datas as $data)
                             <tr>
                                 <td>{{ $no++ }}</td>
-                                <td>{{ $data->nama_univ }}</td>
-                                <td>{{ $data->lulusan }}</td>
-                                <td>{{ $data->jurusan }}</td>
-                                <td>{{ $data->tgl_lulus }}</td>
-                                <td>{{ $data->gpa }}</td>
+                                <td>{{ $data->lulusan}}</td>
+                                <td>{{ $data->nama_sekolah}}</td>
+                                <td>{{ $data->jurusan}}</td>
+                                <td>{{ $data->deskripsi}}</td>
+                                <td>{{ $data->tahun_awal}}</td>
+                                <td>{{ $data->tahun_akhir}}</td>
+                                <td>{{ $data->gpa}}</td>
                                 <td>
                                     <a href="{{ route('admin.education.edit', $data->id) }}"
                                         class="btn btn-success btn-sm">Edit</a> |

@@ -34,8 +34,8 @@ class ExperienceController extends Controller
     {
         // return $request;
         Experience::create([
-            'nama_pekerjaan' => $request->nama_pekerjaan,
-            'perusahaan' => $request->perusahaan,
+            'jabatan' => $request->jabatan,
+            'nama_pt' => $request->nama_pt,
             'deskripsi' => $request->deskripsi,
             'tgl_mulai' => $request->tgl_mulai,
             'tgl_akhir' => $request->tgl_akhir,
@@ -68,8 +68,8 @@ class ExperienceController extends Controller
     public function update(Request $request, string $id)
     {
         Experience::where('id', $id)->update([
-            'nama_pekerjaan' => $request->nama_pekerjaan,
-            'perusahaan' => $request->perusahaan,
+            'jabatan' => $request->jabatan,
+            'nama_pt' => $request->nama_pt,
             'deskripsi' => $request->deskripsi,
             'tgl_mulai' => $request->tgl_mulai,
             'tgl_akhir' => $request->tgl_akhir,

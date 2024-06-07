@@ -13,10 +13,11 @@ class HomeController extends Controller
     public function index()
     {
         $profile = Profile::get()->first();
-        $experience = Experience::get()->last();
-        $education = Education::get();
-        $elast =Education::get()->last();
+        $experience = Experience::get();
+        $explast = Experience::get()->last();
+        $educations = Education::get();
+        $edlast = Education::get()->last();
         $setting = Setting::GET()->last();
-        return view('home.index', compact('profile', 'experience', 'education', 'setting', 'elast'));
+        return view('home.index', compact('profile', 'experience', 'educations', 'setting', 'edlast', 'explast'));
     }
 }

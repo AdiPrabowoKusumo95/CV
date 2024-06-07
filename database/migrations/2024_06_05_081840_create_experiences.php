@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('experiences', function (Blueprint $table) {
             $table->id();
-            $table->string('jabatan');
-            $table->string('nama_pt');
-            $table->string('deskripsi');
-            $table->string('tahun_awal');
-            $table->string('tahun_akhir');
+            $table->string('jabatan')->nullable();
+            $table->string('nama_pt')->nullable();
+            $table->string('deskripsi')->nullable();
+            $table->string('tgl_mulai')->nullable();
+            $table->string('tgl_akhir')->nullable();
             $table->timestamps();
         });
     }

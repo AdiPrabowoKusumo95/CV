@@ -6,12 +6,12 @@
             <div class="card-body">
                 @csrf
                 <div class="form-group mb-3">
-                    <label for="">Nama Pekerjaan</label>
-                    <input type="text" name="nama_pekerjaan" placeholder="Masukkan Nama Pekerjaan" class="form-control">
+                    <label for="">Jabatan</label>
+                    <input type="text" name="jabatan" placeholder="Masukkan Nama Pekerjaan" class="form-control">
                 </div>
                 <div class="form-group mb-3">
-                    <label for="">Perusahaan</label>
-                    <input type="text" name="perusahaan" placeholder="Masukkan Nama Perusahaan" class="form-control">
+                    <label for="">Nama PT</label>
+                    <input type="text" name="nama_pt" placeholder="Masukkan Nama Perusahaan" class="form-control">
                 </div>
                 <div class="form-group mb-3">
                     <label for="">Deskripsi</label>

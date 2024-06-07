@@ -33,13 +33,13 @@ class SettingController extends Controller
     public function store(Request $request)
     {
         // return $request;
-        $pp = $request->file('profile_picture');
+        $pp = $request->file('photo_profil');
         $ppCustom = time() . "_" . $pp->getClientOriginalName();
         $path = 'uploads';
         $pp->move($path, $ppCustom);
 
         Setting::create([
-            'profile_picture' => $ppCustom,
+            'photo_profil' => $ppCustom,
         ]);
 
         return back();
@@ -69,7 +69,7 @@ class SettingController extends Controller
     public function update(Request $request, string $id)
     {
         Setting::where('id', $id)->update([
-            'profile_picture' => $request->pp,
+            'photo_profil' => $request->pp,
 
         ]);
 

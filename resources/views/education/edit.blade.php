@@ -7,20 +7,28 @@
                 @csrf
                 @method("PUT")
                 <div class="form-group mb-3">
-                    <label for="">Nama Universitas</label>
-                    <input value="{{$edit->nama_univ}}" type="text" name="nama_univ" placeholder="Masukkan Nama Universitas" class="form-control">
-                </div>
-                <div class="form-group mb-3">
-                    <label for="">Lulusan</label>
-                    <input value="{{$edit->lulusan}}" type="text" name="lulusan" placeholder="Masukkan Jurusan Pendidikan Anda" class="form-control">
+                    <div class="form-group mb-3">
+                        <label for="">Lulusan</label>
+                        <input value="{{$edit->lulusan}}" type="text" name="lulusan" placeholder="Masukkan Lulusan Pendidikan Anda" class="form-control">
+                    </div>
+                    <label for="">Nama Sekolah</label>
+                    <input value="{{$edit->nama_sekolah}}" type="text" name="nama_sekolah" placeholder="Masukkan Nama Sekolah Anda" class="form-control">
                 </div>
                 <div class="form-group mb-3">
                     <label for="">Jurusan</label>
                     <input value="{{$edit->jurusan}}" type="text" name="jurusan" placeholder="Masukkan Jurusan Pendidikan Anda" class="form-control">
                 </div>
                 <div class="form-group mb-3">
-                    <label for="">Tgl Lulus</label>
-                    <input value="{{$edit->tgl_lulus}}" type="text" name="tgl_lulus" class="form-control">
+                    <label for="">Deskripsi</label>
+                    <input value="{{$edit->deskripsi}}" type="text" name="deskripsi" placeholder="Masukkan Deskripsi Pendidikan Anda" class="form-control">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="">Tahun Awal</label>
+                    <input value="{{$edit->tahun_awal}}" type="year" name="tahun_awal" class="form-control">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="">Tahun Akhir</label>
+                    <input value="{{$edit->tahun_akhir}}" type="year" name="tahun_akhir" class="form-control">
                 </div>
                 <div class="form-group mb-3">
                     <label for="">GPA</label>

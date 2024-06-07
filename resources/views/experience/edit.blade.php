@@ -7,16 +7,16 @@
                 @csrf
                 @method("PUT")
                 <div class="form-group mb-3">
-                    <label for="">Nama Pekerjaan</label>
-                    <input value="{{$edit->nama_pekerjaan}}" type="text" name="nama_pekerjaan" placeholder="Masukkan Nama Pekerjaan" class="form-control">
+                    <label for="">Jabatan</label>
+                    <input value="{{$edit->jabatan}}" type="text" name="jabatan" placeholder="Masukkan Nama Pekerjaan" class="form-control">
                 </div>
                 <div class="form-group mb-3">
-                    <label for="">Perusahaan</label>
-                    <input value="{{$edit->perusahaan}}" type="text" name="perusahaan" placeholder="Masukkan Nama Perusahaan" class="form-control">
+                    <label for="">Nama PT</label>
+                    <input value="{{$edit->nama_pt}}" type="text" name="nama_pt" placeholder="Masukkan Nama Perusahaan" class="form-control">
                 </div>
                 <div class="form-group mb-3">
                     <label for="">Deskripsi</label>
-                    <textarea name="description" id="" cols="30" rows="10" class="form-control">{{$edit->description}}</textarea>
+                    <textarea name="deskripsi" id="" cols="30" rows="10" class="form-control">{{$edit->description}}</textarea>
                 </div>
                 <div class="form-group mb-3">
                     <label for="">Tgl Mulai</label>

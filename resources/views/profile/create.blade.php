@@ -7,11 +7,11 @@
                 @csrf
                 <div class="form-group mb-3">
                     <label for="">Nama</label>
-                    <input type="text" name="name" placeholder="Masukkan Nama Lengkap Anda" class="form-control">
+                    <input type="text" name="nama" placeholder="Masukkan Nama Lengkap Anda" class="form-control">
                 </div>
                 <div class="form-group mb-3">
                     <label for="">Tanggal Lahir</label>
-                    <input type="text" name="tgl_lahir" placeholder="Masukkan Email Anda" class="form-control">
+                    <input type="date" name="tgl_lahir" placeholder="Masukkan Email Anda" class="form-control">
                 </div>
                 <div class="form-group mb-3">
                     <label for="">Nomor Tlp</label>
