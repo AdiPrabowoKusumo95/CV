@@ -19,11 +19,11 @@
                 </div>
                 <div class="form-group mb-3">
                     <label for="">Tgl_Mulai</label>
-                    <input type="date" name="tgl_mulai" class="form-control">
+                    <input type="year" name="tgl_mulai" class="form-control">
                 </div>
                 <div class="form-group mb-3">
                     <label for="">Tgl_Akhir</label>
-                    <input type="date" name="tgl_akhir" class="form-control">
+                    <input type="year" name="tgl_akhir" class="form-control">
                 </div>
                 <div class="form-group mb-3">
                     <input type="submit" class="btn btn-primary" value="Simpan">

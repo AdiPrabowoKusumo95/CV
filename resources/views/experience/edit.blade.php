@@ -16,15 +16,15 @@
                 </div>
                 <div class="form-group mb-3">
                     <label for="">Deskripsi</label>
-                    <textarea name="deskripsi" id="" cols="30" rows="10" class="form-control">{{$edit->description}}</textarea>
+                    <textarea name="deskripsi" id="" cols="30" rows="10" class="form-control">{{$edit->deskripsi}}</textarea>
                 </div>
                 <div class="form-group mb-3">
                     <label for="">Tgl Mulai</label>
-                    <input value="{{$edit->tgl_mulai}}" type="date" name="tgl_mulai" class="form-control">
+                    <input value="{{$edit->tgl_mulai}}" type="year" name="tgl_mulai" class="form-control">
                 </div>
                 <div class="form-group mb-3">
                     <label for="">Tgl Akhir</label>
-                    <input value="{{$edit->tgl_akhir}}" type="date" name="tgl_akhir" class="form-control">
+                    <input value="{{$edit->tgl_akhir}}" type="year" name="tgl_akhir" class="form-control">
                 </div>
                 <div class="form-group mb-3">
                     <input type="submit" class="btn btn-primary" value="Simpan">

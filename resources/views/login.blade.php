@@ -51,12 +51,20 @@
                                             <input type="email" class="form-control form-control-user" id="email"
                                                 name="email" aria-describedby="emailHelp"
                                                 placeholder="Enter Email Address...">
-
+                                            @if ($errors->has('email'))
+                                                <span class="text-danger">
+                                                    {{$errors->first('email')}}
+                                                </span>
+                                            @endif
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user" id="password"
                                                 name="password" placeholder="Password">
-                                            
+                                            @if ($errors->has('password'))
+                                                <span class="text-danger">
+                                                    {{$errors->first('password')}}
+                                                </span>
+                                            @endif
                                         </div>
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox small">

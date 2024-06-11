@@ -31,7 +31,7 @@
                             <tr>
                                 <td>{{ $no++ }}</td>
                                 <td>{{ $data->nama }}</td>
-                                <td>{{ date("d F Y", strtotime($data->tgl_lahir))}}</td>
+                                <td>{{ $data->tgl_lahir}}</td>
                                 <td>{{ $data->telpon }}</td>
                                 <td>{{ $data->alamat }}</td>
                                 <td>{{ $data->usia }}</td>

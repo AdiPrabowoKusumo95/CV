@@ -64,7 +64,7 @@ class ProfileController extends Controller
     public function edit(string $id)
     {
         $edit = Profile::find($id);
-        $title = "Edit Data" . $edit->name;
+        $title = "Edit Data Profile" . $edit->name;
         return view('profile.edit', compact('edit', 'title'));
     }
 

@@ -23,7 +23,7 @@ class LoginController extends Controller
             $request->session()->regenerate();
             return redirect()->intended(route('admin.dashboard'));
         }
-        return redirect(route('admin.login'))->with('errors','Login GAGAL!!!');
+        return redirect(route('admin.login'))->with('error','Login GAGAL!!!');
 
     }
 

@@ -12,7 +12,7 @@
                 </div>
                 <div class="form-group mb-3">
                     <label for="">Tanggal Lahir</label>
-                    <input value="{{$edit->tgl_lahir}}" type="date" name="tgl_lahir" placeholder="Masukkan Tanggal Lahir Anda" class="form-control">
+                    <input value="{{$edit->tgl_lahir}}" type="text" name="tgl_lahir" placeholder="Masukkan Tanggal Lahir Anda" class="form-control">
                 </div>
                 <div class="form-group mb-3">
                     <label for="">Nomor Tlp</label>

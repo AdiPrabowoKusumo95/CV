@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\Profile;
 use App\Models\Experience;
 use App\Models\Education;
 use App\Models\Setting;
+use App\Models\Certification;
+use App\Models\Skill;
+use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
@@ -18,6 +20,8 @@ class HomeController extends Controller
         $educations = Education::get();
         $edlast = Education::get()->last();
         $setting = Setting::GET()->last();
-        return view('home.index', compact('profile', 'experience', 'educations', 'setting', 'edlast', 'explast'));
+        $certifications = Certification::get();
+        $skills = Skill::get();
+        return view('home.index', compact('profile', 'experience', 'educations', 'setting', 'edlast', 'explast', 'certifications', 'skills'));
     }
 }

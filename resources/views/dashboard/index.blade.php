@@ -1,4 +1,4 @@
 @extends('layouts.app')
 @section('content')
-Halo ini dashboard view
+<a href="{{route('home')}}" target="_blank"></a>
 @endsection

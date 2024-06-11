@@ -13,9 +13,9 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item">
-        <a class="nav-link" href="{{route('admin.dashboard')}}">
+        <a class="nav-link" href="{{route('home')}}" target="_blank">
             <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Dashboard</span></a>
+            <span>Website CV</span></a>
     </li>
 
     <!-- Divider -->
@@ -39,15 +39,15 @@
                 <a class="collapse-item" href="{{route('admin.profile.index')}}">Profil</a>
                 <a class="collapse-item" href="{{route('admin.experience.index')}}">Pengalaman</a>
                 <a class="collapse-item" href="{{route('admin.education.index')}}">Pendidikan</a>
-                <a class="collapse-item" href="#">Keahlian</a>
+                <a class="collapse-item" href="{{route('admin.certification.index')}}">Penghargaan</a>
+                <a class="collapse-item" href="{{route('admin.skill.index')}}">Keahlian</a>
                 <a class="collapse-item" href="#">Hobi</a>
-                <a class="collapse-item" href="#">Penghargaan</a>
             </div>
         </div>
     </li>
 
     <!-- Nav Item - Utilities Collapse Menu -->
-    <li class="nav-item">
+    {{-- <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
             aria-expanded="true" aria-controls="collapseUtilities">
             <i class="fas fa-fw fa-wrench"></i>
@@ -63,7 +63,7 @@
                 <a class="collapse-item" href="utilities-other.html">Other</a>
             </div>
         </div>
-    </li>
+    </li> --}}
 
     <!-- Divider -->
     <hr class="sidebar-divider">

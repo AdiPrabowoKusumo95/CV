@@ -48,15 +48,14 @@
 
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-            <h2>I'm a passionate <span>graphic designer</span> from New York</h2>
+            <h2>I'm a passionate <span>junior web programmer</span> from West Jakarta</h2>
 
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link active" href="#header">Home</a></li>
                     <li><a class="nav-link" href="#about">About</a></li>
                     <li><a class="nav-link" href="#resume">Resume</a></li>
-                    <li><a class="nav-link" href="#services">Services</a></li>
-                    <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li><a class="nav-link" href="#awards">Awards</a></li>
                     <li><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
@@ -79,11 +78,8 @@
     <!-- ======= Resume Section ======= -->
     @include('home.resume')
     <!-- End Resume Section -->
-    <!-- ======= Services Section ======= -->
-    @include('home.services')
-    <!-- End Services Section -->
     <!-- ======= Portfolio Section ======= -->
-    @include('home.portfolio')
+    @include('home.awards')
     <!-- End Portfolio Section -->
     <!-- ======= Contact Section ======= -->
     @include('home.contact')
@@ -94,7 +90,7 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <span>Copyright &copy; Adi Prabowo Kusumo <?php echo date('Y') ?></span>
     </div>
 
     <!-- Vendor JS Files -->
@@ -112,3 +108,5 @@
 </body>
 
 </html>
+
+

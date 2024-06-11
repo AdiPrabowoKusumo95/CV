@@ -14,7 +14,7 @@ class EducationController extends Controller
     public function index()
     {
         $datas = Education::get();
-        $title = "Data education";
+        $title = "Data Education";
         return view('education.index', compact('datas', 'title'));
     }
 
@@ -23,7 +23,7 @@ class EducationController extends Controller
      */
     public function create()
     {
-        $title = "Tambah Profil";
+        $title = "Tambah Data Education";
         return view('education.create', compact('title'));
     }
 
@@ -60,7 +60,7 @@ class EducationController extends Controller
     public function edit(string $id)
     {
         $edit = Education::find($id);
-        $title = "Edit Data" . $edit->name;
+        $title = "Edit Data Education" . $edit->name;
         return view('education.edit', compact('edit', 'title'));
     }
 

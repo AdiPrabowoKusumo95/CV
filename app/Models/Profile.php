@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Profile extends Model
 {
+    use HasFactory;
     protected $fillable = ['nama', 'tgl_lahir', 'telpon', 'alamat', 'usia', 'deskripsi', 'email', 'twitter_link', 'facebook_link', 'instagram_link', 'linkedin_link'
     ] ;
-    use HasFactory;
 
 
 }
